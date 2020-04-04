@@ -62,7 +62,7 @@ class HistoryManager:
             self.update_data(start, end, coin)
 
         if len(coins)!=self._coin_number:
-            raise ValueError("the length of selected coins %d is not equal to expected %d"
+            raise ValueError("the length of selected coins %d  %d"
                              % (len(coins), self._coin_number))
 
         logging.info("feature type list is %s" % str(features))
